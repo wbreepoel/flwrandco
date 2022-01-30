@@ -1,0 +1,107 @@
+<style>
+    .top-container {
+        width: 80%;
+        margin:auto;
+    }
+
+    .nutrition-container {
+        display:flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-bottom: 50px;
+    }
+
+    .left-image-container {
+        max-width: 485px;
+        height: 100%;
+        box-sizing: border-box;
+        display: flex;
+        justify-content: center;
+    }
+
+    .right-image-container {
+        width: 485px;
+        height: 100%;
+        box-sizing: border-box;
+        display: flex;
+        justify-content: center;
+    }
+
+    .nutrition-header h1{
+        font-weight: 700;
+        text-align: center;
+    }
+
+    .nutritional-facts-header {
+        font-weight: 700;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .left-image {
+        max-width: 500px
+    }
+
+    .right-image {
+        max-width: 450px;
+    }
+
+    @media screen and (max-width: 640px) {
+        .left-image {
+            width: 80%;
+        }
+
+        .right-image {
+            width: 75%;
+        }
+    }
+</style>
+
+<div class="top-container">
+    <h1 class="nutritional-facts-header">Nutritional Facts:</h1>
+    <hr>
+</div>
+
+
+{% for block in section.blocks %}
+    {% if block.type == "pair" %}
+        <div class="nutrition-header"> <h1>{{block.settings.header}}</h1> </div>    
+        <div class="nutrition-container">
+            <div class="left-image-container">
+                <img class="left-image" src="{{ block.settings.image_left | image_url }}" alt="">
+            </div>
+            <div class="right-image-container">
+                <img class="right-image" src="{{ block.settings.image_right | image_url }}" alt="">
+            </div>
+        </div>    
+    {% endif %}
+{% endfor %}
+
+{% schema %}
+{   
+    "name":"Image Pair Selector",
+    "settings":[],
+    "blocks": [
+    {
+        "name":"Image Pair",
+        "type":"pair",
+        "settings":[
+        {
+            "type":"text",
+            "id":"header",
+            "label":"Header"
+        },
+        {
+            "type":"image_picker",
+            "id":"image_left",
+            "label":"Left Image"
+        },
+        {
+            "type":"image_picker",
+            "id":"image_right",
+            "label":"Right Image"
+        }]
+    }]
+    
+}
+{% endschema %}

@@ -1,29 +1,9 @@
 {
   "sections": {
-    "image_banner": {
-      "type": "image-banner",
-      "blocks": {
-        "heading": {
-          "type": "heading",
-          "settings": {
-            "heading": "Talk about your brand"
-          }
-        },
-        "button": {
-          "type": "buttons",
-          "settings": {
-            "button_label_1": "Shop all",
-            "button_link_1": "shopify:\/\/collections\/all",
-            "button_label_2": ""
-          }
-        }
-      },
-      "block_order": [
-        "heading",
-        "button"
-      ],
+    "16430487634e64d179": {
+      "type": "custom-liquid",
       "settings": {
-        "desktop_content_position": "middle-center"
+        "custom_liquid": "<style>\nvideo {\nwidth: 100%;\ndisplay: block;\nmargin: 0 auto;\n}\n<\/style>\n<video autoplay loop>\n    <source src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0623\/2886\/4997\/files\/cookie-video-trimmed.mp4?v=1643049310\"\n                              type=\"video\/mp4\">\n<\/video>"
       }
     },
     "rich_text": {
@@ -31,89 +11,368 @@
       "blocks": {
         "heading": {
           "type": "heading",
-          "settings": {}
+          "settings": {
+            "heading": "Need cookies ..?",
+            "heading_size": "h0"
+          }
         },
         "text": {
           "type": "text",
-          "settings": {}
+          "settings": {
+            "text": "<p>You never know when you’ll have a crumbl craving, so we make it easy to order cookies any way you want.<\/p>"
+          }
         },
         "button": {
           "type": "button",
-          "settings": {}
+          "settings": {
+            "button_label": "See our options",
+            "button_link": "",
+            "button_style_secondary": true
+          }
+        },
+        "df914675-0a4f-47f4-98d8-82af8361e0b3": {
+          "type": "icons",
+          "settings": {
+            "delivery_icon": true,
+            "delivery_text": "Delivery",
+            "catering_icon": true,
+            "catering_text": "Catering",
+            "gifts_icon": true,
+            "gifts_text": "Gifts",
+            "shipping_icon": true,
+            "shipping_text": "Shipping",
+            "shop_icon": true,
+            "shop_text": "Shop"
+          }
         }
       },
       "block_order": [
         "heading",
         "text",
-        "button"
+        "button",
+        "df914675-0a4f-47f4-98d8-82af8361e0b3"
       ],
-      "settings": {}
-    },
-    "featured_products": {
-      "type": "featured-collection",
       "settings": {
-        "title": "Featured products",
-        "collection": "all",
-        "image_ratio": "square"
+        "color_scheme": "accent-1",
+        "full_width": true
       }
     },
-    "collage": {
-      "type": "collage",
+    "1642933923fc2138c5": {
+      "type": "image-with-text",
       "blocks": {
-        "video": {
-          "type": "video",
-          "settings": {}
+        "1642933923ad0403d1-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Caramel Popcorn",
+            "heading_size": "h0"
+          }
         },
-        "product": {
-          "type": "product",
-          "settings": {}
+        "1642933923ad0403d1-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>A buttery cookie topped with thick caramel frosting, crunchy caramel popcorn, and smooth caramel.<\/p>",
+            "text_style": "body"
+          }
         },
-        "collection": {
-          "type": "collection",
+        "1642933923ad0403d1-2": {
+          "type": "button",
+          "settings": {
+            "button_label": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "1642933923ad0403d1-0",
+        "1642933923ad0403d1-1",
+        "1642933923ad0403d1-2"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/caramel-popcorn.jpg",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "center"
+      }
+    },
+    "16429343206badb68b": {
+      "type": "image-with-text",
+      "blocks": {
+        "1642934320a8d0bc5d-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Funfetti",
+            "heading_size": "h0"
+          }
+        },
+        "1642934320a8d0bc5d-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>A warm rainbow vanilla sugar cookie filled with rainbow sprinkles<\/p>",
+            "text_style": "body"
+          }
+        },
+        "1642934320a8d0bc5d-2": {
+          "type": "button",
+          "settings": {
+            "button_label": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "1642934320a8d0bc5d-0",
+        "1642934320a8d0bc5d-1",
+        "1642934320a8d0bc5d-2"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/funfetti.jpg",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "text_first",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "center"
+      }
+    },
+    "1642934462b5321637": {
+      "type": "image-with-text",
+      "blocks": {
+        "16429344623db9f121-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Milk Chocolate Chip",
+            "heading_size": "h0"
+          }
+        },
+        "16429344623db9f121-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>The classic—you can't go wrong. Thick, soft, and packed with milk chocolate chips.<\/p>",
+            "text_style": "body"
+          }
+        },
+        "16429344623db9f121-2": {
+          "type": "button",
+          "settings": {
+            "button_label": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "16429344623db9f121-0",
+        "16429344623db9f121-1",
+        "16429344623db9f121-2"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/milk-chocolate-chip.jpg",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "center"
+      }
+    },
+    "1642934468b0f61651": {
+      "type": "image-with-text",
+      "blocks": {
+        "1642934468e3480c67-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Peanut Butter Cup",
+            "heading_size": "h0"
+          }
+        },
+        "1642934468e3480c67-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Our signature peanut butter cookie packed with REESE's Peanut Butter Cups topped with melty peanut butter chips and more chopped REESE'S Peanut Butter Cups on top.<\/p>",
+            "text_style": "body"
+          }
+        },
+        "1642934468e3480c67-2": {
+          "type": "button",
+          "settings": {
+            "button_label": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "1642934468e3480c67-0",
+        "1642934468e3480c67-1",
+        "1642934468e3480c67-2"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/peanut-butter-cup.jpg",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "text_first",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "center"
+      }
+    },
+    "16429344710115e6d1": {
+      "type": "image-with-text",
+      "blocks": {
+        "164293447196ec5feb-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Classic Pink Sugar",
+            "heading_size": "h0"
+          }
+        },
+        "164293447196ec5feb-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Our signature sugar cookie topped with a perfect pink swirl of almond-flavored frosting.<\/p>",
+            "text_style": "body"
+          }
+        },
+        "164293447196ec5feb-2": {
+          "type": "button",
+          "settings": {
+            "button_label": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "164293447196ec5feb-0",
+        "164293447196ec5feb-1",
+        "164293447196ec5feb-2"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/pink-frost.jpg",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "center"
+      }
+    },
+    "164293447517cdf877": {
+      "type": "image-with-text",
+      "blocks": {
+        "164293447519480fc6-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Rocky Road",
+            "heading_size": "h0"
+          }
+        },
+        "164293447519480fc6-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "text_style": "body"
+          }
+        },
+        "164293447519480fc6-2": {
+          "type": "button",
+          "settings": {
+            "button_label": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "164293447519480fc6-0",
+        "164293447519480fc6-1",
+        "164293447519480fc6-2"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/rocky-road.jpg",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "text_first",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "center"
+      }
+    },
+    "1642930791efc6d9bf": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": ""
+      }
+    },
+    "16434443634be461c5": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "Buy now!",
+        "collection": "cookies",
+        "products_to_show": 4,
+        "show_view_all": true,
+        "swipe_on_mobile": true,
+        "image_ratio": "adapt",
+        "show_secondary_image": false,
+        "add_image_padding": false,
+        "show_image_outline": true,
+        "show_vendor": false,
+        "show_rating": false
+      }
+    },
+    "16434443745c5ac20b": {
+      "type": "newsletter",
+      "blocks": {
+        "1643444374a168bfdd-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Subscribe for our latest cookie news!"
+          }
+        },
+        "1643444374a168bfdd-1": {
+          "type": "paragraph",
+          "settings": {
+            "text": "<p>Be the first to know about new flavors and exclusive offers.<\/p>"
+          }
+        },
+        "1643444374a168bfdd-2": {
+          "type": "email_form",
           "settings": {}
         }
       },
       "block_order": [
-        "video",
-        "product",
-        "collection"
+        "1643444374a168bfdd-0",
+        "1643444374a168bfdd-1",
+        "1643444374a168bfdd-2"
       ],
-      "settings": {}
-    },
-    "video": {
-      "type": "video",
-      "settings": {}
-    },
-    "multi_column": {
-      "type": "multicolumn",
-      "blocks": {
-        "column1": {
-          "type": "column",
-          "settings": {}
-        },
-        "column2": {
-          "type": "column",
-          "settings": {}
-        },
-        "column3": {
-          "type": "column",
-          "settings": {}
-        }
-      },
-      "block_order": [
-        "column1",
-        "column2",
-        "column3"
-      ],
-      "settings": {}
+      "settings": {
+        "color_scheme": "accent-1",
+        "full_width": true
+      }
     }
   },
   "order": [
-    "image_banner",
+    "16430487634e64d179",
     "rich_text",
-    "featured_products",
-    "collage",
-    "video",
-    "multi_column"
+    "1642933923fc2138c5",
+    "16429343206badb68b",
+    "1642934462b5321637",
+    "1642934468b0f61651",
+    "16429344710115e6d1",
+    "164293447517cdf877",
+    "1642930791efc6d9bf",
+    "16434443634be461c5",
+    "16434443745c5ac20b"
   ]
 }

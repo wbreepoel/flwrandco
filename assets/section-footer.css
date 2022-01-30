@@ -51,6 +51,7 @@
   border-top: solid 0.1rem rgba(var(--color-foreground), 0.08);
   padding-top: 3rem;
   padding-bottom: 3rem;
+  background-color: black;
 }
 
 .footer__content-bottom:only-child {
@@ -158,6 +159,7 @@
   margin-bottom: 2rem;
   margin-top: 0;
   font-size: calc(var(--font-heading-scale) * 1.6rem);
+  font-weight: 700;
 }
 
 @media screen and (min-width: 990px) {
@@ -405,6 +407,10 @@ noscript .localization-selector.link {
 
 .footer-block__details-content {
   margin-bottom: 4rem;
+}
+
+.footer-block__details-content li {
+  font-weight: 700;
 }
 
 @media screen and (min-width: 750px) {

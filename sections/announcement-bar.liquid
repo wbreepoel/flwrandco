@@ -1,30 +1,107 @@
-{%- for block in section.blocks -%}
+<!-- {%- for block in section.blocks -%}
   {%- case block.type -%}
     {%- when 'announcement' -%}
-      <div class="announcement-bar color-{{ block.settings.color_scheme }} gradient" role="region" aria-label="{{ 'sections.header.announcement' | t }}" {{ block.shopify_attributes }}>
-        {%- if block.settings.text != blank -%}
-          {%- if block.settings.link != blank -%}
-            <a href="{{ block.settings.link }}" class="announcement-bar__link link link--text focus-inset animate-arrow">
-          {%- endif -%}
-              <p class="announcement-bar__message h5">
-                {{ block.settings.text | escape }}
-                {%- if block.settings.link != blank -%}
-                  {% render 'icon-arrow' %}
-                {%- endif -%}
-              </p>
-          {%- if block.settings.link != blank -%}
-            </a>
-          {%- endif -%}
-        {%- endif -%}
-      </div>
-  {%- endcase -%}
-{%- endfor -%}
+    
+      <div class="announcement-bar color-{{ block.settings.color }} gradient" role="region" aria-label="{{ 'sections.header.announcement' | t }}" {{ block.shopify_attributes }}>
+        
+        <div class="announcement-left-div">
+          <div class="menu-icon-div">
+            {% include "icon.menu" %}
+          </div>
+          <div class="logo_image_div">
+            {%- when 'logo' -%}
+              {%- if block.settings.logo != blank -%}
+                {%- assign image_size = block.settings.logo_width | append: 'x' -%}
+                  <img 
+                  src="{{ block.settings.logo | img_url: image_size}}"
+                  class="logo_image"
+                  loading="lazy"
+                  width="{{ section.settings.logo.width }}"
+                  height="{{ section.settings.logo.height }}"
+                >
+              
+              {%- else -%}
+                <span class="no-logo">{{shop.name}}</span>
+              {%- endif -%}
+            </div>
+            <div class="shop-name-div">
+              {{shop.name}}
+            </div>
+          </div>
+          <div class="announcement-right-div"> 
+            <div class="location-icon-div">
+                <div class="location-text">Find a Shop</div>
+                <div>{% include 'icon.location' %}</div>
+            </div>
+    
+              <div class="order-now-button-div"> 
+                <button class="order-now-button">Order now</button>
+              </div>
+            </div> 
+            
+            <div class="mobile-announcement-bar">
+              <div class="mobile-menu-icon-div">
+                {% include "icon.menu" %}
+              </div>
+              <div class="mobile-logo-div">
+                {%- when 'logo' -%}
+              {%- if block.settings.logo != blank -%}
+                {%- assign image_size = block.settings.logo_width | append: 'x' -%}
+                  <img 
+                  src="{{ block.settings.logo | img_url: image_size}}"
+                  class="logo_image"
+                  loading="lazy"
+                  width="{{ section.settings.logo.width }}"
+                  height="{{ section.settings.logo.height }}"
+                >
+              
+              {%- else -%}
+                <span class="no-logo">{{shop.name}}</span>
+              {%- endif -%}
+              </div>
+              <div class="mobile-order-now-button">
+                <button class="order-now-button">Order now</button>
+              </div>
+            </div>
 
-{% schema %}
+      </div>
+      
+      
+  {%- endcase -%}
+{%- endfor -%} -->
+
+<!-- {% schema %}
 {
   "name": "t:sections.announcement-bar.name",
   "max_blocks": 12,
+  "settings": [
+  {
+    "type": "color",
+    "id": "background_color",
+    "label": "Background Color"
+  }],
   "blocks": [
+    { 
+      "type": "logo",
+      "name": "Logo Picker",
+      "settings": [
+        {
+            "type": "image_picker",
+            "id": "logo",
+            "label": "logo"
+        },
+        {
+          "type": "range",
+          "id": "logo_width",
+          "min": 50,
+          "max": 250,
+          "step": 10,
+          "default": 100,
+          "unit": "t:sections.header.settings.logo_width.unit",
+          "label": "t:sections.header.settings.logo_width.label"
+        }
+        ]
+    },
     {
       "type": "announcement",
       "name": "t:sections.announcement-bar.blocks.announcement.name",
@@ -79,4 +156,4 @@
     ]
   }
 }
-{% endschema %}
+{% endschema %} -->

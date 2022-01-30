@@ -1,0 +1,173 @@
+<div class="faq-navigation-menu">
+    <div class="menu-item faq-menu-item active-faq">
+        <h2>Frequent Questions</h2>
+        {% include 'icon.question' %}
+    </div>
+    <div class="menu-item support-menu-item">
+        <h2>Contact Support</h2>
+        {% include 'icon.headphone' %}
+    </div>
+    <!-- <div class="menu-item suggest-menu-item">
+        <h2>Make a suggestion</h2>
+        {% include 'icon.idea' %}
+    </div> -->
+</div>
+
+
+<div class="outer-container">
+    <div class="faq-support-container faq-container active-container">
+    <h1>Frequently Asked Questions</h1>
+   
+        {% for block in section.blocks %}
+            {% if block.type != 'QA' %}
+                <div class="category-div">
+                    <h2 class="category-title">
+                    {{block.settings.category}}
+                    </h2>
+                </div>
+            {% elsif block.type == 'QA' %}    
+                <div class="container">
+                    <div class="faq__section">
+                        <div class="question__header">
+                            <h3 class="question__title">
+                                <strong>Q.</strong>
+                                {{block.settings.title}} 
+                            </h3>
+                            <div class="close__section">
+                                {% include 'icon.arrow-down' %}
+                            </div>
+                        </div>
+                        <div class="answer__section">
+                            <p> 
+                                <strong>A.</strong>
+                                {{block.settings.answer}}
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            {% endif %}
+        {% endfor %}
+    </div>
+    <div class="faq-support-container contact-container">
+        <h1>How can we assist you?</h1>
+        {% include 'icon.headphone' %}
+        <h2>We'd love to chat with you!</h2>
+        <hr>
+        <h3>Contact Information</h3>
+        <div class="contact-information-div">
+            <!-- <div class="support-div support-hours">
+                <h3><strong>SUPPORT HOURS:</strong></h3>
+            </div> -->
+            <div class="support-div support-days">
+                <h3><strong>Monday-Thursday</strong></h3>
+                <h4> {{section.settings.support-mon-thu}}</h4>
+            </div>
+            <div class="support-div support-days-weekend">
+                <h3><strong>Weekend Days</strong></h3>
+                <h4>{{section.settings.support-weekend}}</h4>
+            </div>
+            <div class="support-div contact-info-email">
+                <h3><strong>Email</strong></h3>
+                <h4>
+                        {{section.settings.email}}
+                </h4>
+            </div>
+            <div class="support-div contact-info-email">
+                <h3><strong>Phone</strong></h3>
+                <h4>{{section.settings.phone}}</h4>
+            </div>
+        </div>
+       
+    </div>
+</div>
+
+
+
+
+
+<script>
+    const faqSections = document.querySelectorAll('.faq__section')
+
+faqSections.forEach(faqSection => {
+    faqSection.addEventListener('click', () => {
+        faqSection.classList.toggle('active')
+    })
+})
+
+const menuItems = document.querySelectorAll('.menu-item')
+const containers = document.querySelectorAll('.faq-support-container')
+menuItems.forEach(item => {
+    item.addEventListener("click",() => {
+        menuItems.forEach(div => {
+            div.classList.remove('active-faq')
+        })
+        containers.forEach(container => {
+            container.classList.toggle("active-container")
+        })
+        item.classList.add("active-faq")
+    })
+})
+
+</script>
+
+{% schema %}
+{
+    "name": "Customer Questions",
+    "settings": [
+        {
+            "type":"text",
+            "label":"Head for FAQ",
+            "id":"heading"
+        },
+        {
+            "type":"text",
+            "label":"phone",
+            "id":"phone"
+        },
+        {
+            "type":"text",
+            "label":"email",
+            "id":"email"
+        },
+        {
+            "type":"text",
+            "label":"Support hours mon-thu",
+            "id":"support-mon-thu"
+        },
+        {
+            "type":"text",
+            "label":"Support hours weekend",
+            "id":"support-weekend"
+        }
+    ],
+    "blocks": [
+    {
+        "type":"category",
+        "name":"Category",
+        "settings": [
+        {
+            "type":"text",
+            "label": "category",
+            "id":"category"
+        }]
+    },
+    {
+        "type": "QA",
+        "name": "Question/Answer",
+        "settings": [
+        {
+            "type":"text",
+            "label":"Question",
+            "id":"title"
+        },
+        {
+            "type":"textarea",
+            "label":"Answer",
+            "id":"answer"
+        }
+        ]
+    }
+        
+    ]
+}
+{% endschema %}

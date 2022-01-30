@@ -2,13 +2,19 @@
   "current": {
     "colors_solid_button_labels": "#FFFFFF",
     "colors_accent_1": "#121212",
-    "colors_accent_2": "#334FB4",
+    "colors_accent_2": "#f3f7f8",
     "colors_text": "#121212",
     "colors_outline_button_labels": "#121212",
     "colors_background_1": "#FFFFFF",
     "colors_background_2": "#F3F3F3",
     "type_header_font": "assistant_n4",
     "type_body_font": "assistant_n4",
+    "page_width": "1200",
+    "social_facebook_link": "https:\/\/facebook.com\/shopify",
+    "social_pinterest_link": "https:\/\/pinterest.com\/shopify",
+    "social_instagram_link": "http:\/\/instagram.com\/shopify",
+    "social_tiktok_link": "https:\/\/tiktok.com\/@shopify",
+    "currency_code_enabled": true,
     "sections": {
       "announcement-bar": {
         "type": "announcement-bar",
@@ -16,23 +22,33 @@
           "announcement-bar-0": {
             "type": "announcement",
             "settings": {
-              "text": "Welcome to our store",
-              "color_scheme": "background-1",
+              "text": "hello",
+              "color_scheme": "accent-2",
               "link": ""
+            }
+          },
+          "c7b9451d-20d5-40fb-af07-6d62c1502c62": {
+            "type": "logo",
+            "settings": {
+              "logo": "shopify:\/\/shop_images\/logo-flwrandco.png",
+              "logo_width": 60
             }
           }
         },
         "block_order": [
-          "announcement-bar-0"
+          "announcement-bar-0",
+          "c7b9451d-20d5-40fb-af07-6d62c1502c62"
         ],
-        "settings": {}
+        "settings": {
+          "background_color": "#1e1515"
+        }
       },
       "header": {
         "type": "header",
         "settings": {
           "color_scheme": "background-1",
-          "logo": "shopify:\/\/shop_images\/flwrandco-logo_4203a533-7cc2-435d-aa5b-9e4cf76dcab5.png",
-          "logo_width": 250,
+          "logo": "shopify:\/\/shop_images\/logo-flwrandco.png",
+          "logo_width": 70,
           "logo_position": "middle-left",
           "menu": "main-menu",
           "show_line_separator": true,
@@ -45,27 +61,36 @@
           "footer-0": {
             "type": "link_list",
             "settings": {
-              "heading": "Quick links",
+              "heading": "Company",
               "menu": "footer"
             }
           },
           "footer-1": {
             "type": "text",
             "settings": {
-              "heading": "Heading",
-              "subtext": "<p>Share store details, promotions, or brand content with your customers.<\/p>"
+              "heading": "",
+              "subtext": ""
+            }
+          },
+          "a00033bf-b741-44a7-b92f-e997a04f3c33": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/logo-flwrandco.png",
+              "image_width": 145,
+              "alignment": "center"
             }
           }
         },
         "block_order": [
           "footer-0",
-          "footer-1"
+          "footer-1",
+          "a00033bf-b741-44a7-b92f-e997a04f3c33"
         ],
         "settings": {
           "color_scheme": "background-1",
-          "newsletter_enable": true,
-          "newsletter_heading": "Subscribe to our emails",
-          "show_social": false,
+          "newsletter_enable": false,
+          "newsletter_heading": "Subscribe to our cookie news!",
+          "show_social": true,
           "enable_country_selector": true,
           "enable_language_selector": true,
           "payment_enable": true

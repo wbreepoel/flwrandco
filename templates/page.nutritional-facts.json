@@ -1,0 +1,100 @@
+{
+  "sections": {
+    "main": {
+      "type": "nutritional-facts",
+      "blocks": {
+        "b74539e1-2e33-4e2e-a219-209c2c29ff00": {
+          "type": "pair",
+          "settings": {
+            "header": "Rocky Road",
+            "image_left": "shopify:\/\/shop_images\/rocky-road.jpg",
+            "image_right": "shopify:\/\/shop_images\/nutritional-fact.jpg"
+          }
+        },
+        "3fb07968-7ddc-4c35-8fd4-535631875d99": {
+          "type": "pair",
+          "settings": {
+            "header": "Funfetti",
+            "image_left": "shopify:\/\/shop_images\/funfetti.jpg",
+            "image_right": "shopify:\/\/shop_images\/nutritional-facts-2.jpg"
+          }
+        },
+        "ebcd3597-4af1-4a29-88df-51a0ca867de2": {
+          "type": "pair",
+          "settings": {
+            "header": "Caramel Popcorn",
+            "image_left": "shopify:\/\/shop_images\/caramel-popcorn.jpg",
+            "image_right": "shopify:\/\/shop_images\/nutritional-facts-3.jpg"
+          }
+        },
+        "929349b9-a993-4d1e-a9ad-0562c3818b5d": {
+          "type": "pair",
+          "settings": {
+            "header": "Milk Chocolate Chip",
+            "image_left": "shopify:\/\/shop_images\/milk-chocolate-chip.jpg",
+            "image_right": "shopify:\/\/shop_images\/nutritional-facts-2.jpg"
+          }
+        },
+        "853e6913-edf2-4ea7-8fc2-e2f3ff003c09": {
+          "type": "pair",
+          "settings": {
+            "header": "Peanut Butter Cup",
+            "image_left": "shopify:\/\/shop_images\/peanut-butter-cup.jpg",
+            "image_right": "shopify:\/\/shop_images\/nutritional-facts-3.jpg"
+          }
+        },
+        "71c2a4bd-fc7e-4981-883f-5f3aaa101288": {
+          "type": "pair",
+          "settings": {
+            "header": "Classic Pink Sugar",
+            "image_left": "shopify:\/\/shop_images\/pink-frost.jpg",
+            "image_right": "shopify:\/\/shop_images\/nutritional-fact.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "b74539e1-2e33-4e2e-a219-209c2c29ff00",
+        "3fb07968-7ddc-4c35-8fd4-535631875d99",
+        "ebcd3597-4af1-4a29-88df-51a0ca867de2",
+        "929349b9-a993-4d1e-a9ad-0562c3818b5d",
+        "853e6913-edf2-4ea7-8fc2-e2f3ff003c09",
+        "71c2a4bd-fc7e-4981-883f-5f3aaa101288"
+      ],
+      "settings": {}
+    },
+    "1643453942a16a56d8": {
+      "type": "newsletter",
+      "blocks": {
+        "1643453942bdc07d31-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Subscribe for our latest cookie news!"
+          }
+        },
+        "1643453942bdc07d31-1": {
+          "type": "paragraph",
+          "settings": {
+            "text": "<p>Be the first to know about new flavors and exclusive offers.<\/p>"
+          }
+        },
+        "1643453942bdc07d31-2": {
+          "type": "email_form",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "1643453942bdc07d31-0",
+        "1643453942bdc07d31-1",
+        "1643453942bdc07d31-2"
+      ],
+      "settings": {
+        "color_scheme": "accent-1",
+        "full_width": true
+      }
+    }
+  },
+  "order": [
+    "main",
+    "1643453942a16a56d8"
+  ]
+}

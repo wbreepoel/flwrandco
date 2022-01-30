@@ -1,0 +1,133 @@
+{
+  "sections": {
+    "1643227771b1e79dff": {
+      "type": "image-with-text",
+      "blocks": {
+        "1643227771c7c5d3a3-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Customer Support",
+            "heading_size": "h0"
+          }
+        },
+        "1643227771c7c5d3a3-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>We love hearing from our customers and receiving valuable feedback! Please text us with any feedback, questions, or concerns you may have.<br\/><\/p>",
+            "text_style": "subtitle"
+          }
+        },
+        "1643227771c7c5d3a3-2": {
+          "type": "button",
+          "settings": {
+            "button_label": "Button label",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "1643227771c7c5d3a3-0",
+        "1643227771c7c5d3a3-1",
+        "1643227771c7c5d3a3-2"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/catering-hero.jpg",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "text_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "left"
+      }
+    },
+    "main": {
+      "type": "faq",
+      "blocks": {
+        "f00b4d04-6b6c-4ce0-bf10-630e3abfdc96": {
+          "type": "category",
+          "settings": {
+            "category": "Shipping"
+          }
+        },
+        "1b55bd6a-7a6e-4c5c-b475-ac38e8ad8a81": {
+          "type": "QA",
+          "settings": {
+            "title": "How much is Shipping?",
+            "answer": "Shipping is calculated at checkout and is free over 50$."
+          }
+        },
+        "065fe9ca-dc03-4141-9780-58933b8804b0": {
+          "type": "QA",
+          "settings": {
+            "title": "Speaking of Shipping, what is our process?",
+            "answer": "We are so happy to bring our cookies into your home - despite the distance! Our shipping facility is located in Amsterdam, where we ship all orders. Each cookie is air-tight sealed, to ensure quality freshness! (These cookies will remain fresh for 7-10 days) We’ve also included reheating instructions for the in-store freshness experience. Please note: Times suggested on our website are estimated. Due to high volume, shipping delays or other unforeseeable events - times may vary."
+          }
+        },
+        "d1c16aa4-9c84-49fd-a237-524f82d2f7f2": {
+          "type": "category",
+          "settings": {
+            "category": "Delivery"
+          }
+        },
+        "dc362c27-22e1-4d8d-8c3e-5a70e1733d68": {
+          "type": "QA",
+          "settings": {
+            "title": "What is our store Delivery radius?",
+            "answer": "Great question! We would love to deliver cookies to any address that is within 10 miles of our flwr & co. storefront. Our app and website will indicate if your specific address is in range."
+          }
+        },
+        "c2fc24ec-3341-422e-98a8-dbba0ea38b1d": {
+          "type": "QA",
+          "settings": {
+            "title": "What are my cookie ordering options?",
+            "answer": "We have many different options to get your hands on delicious cookies! We offer curbside pickup, delivery, in store purchase, shipping AND catering. Please note for catering orders and shipping, flavors will vary. To order, please download our App!"
+          }
+        },
+        "0ef1504b-5fef-4f5d-9265-fbc46d2e1dc4": {
+          "type": "category",
+          "settings": {
+            "category": "Gifting"
+          }
+        },
+        "d6d3fa6f-1abf-439b-9c7e-342aabb1bc37": {
+          "type": "QA",
+          "settings": {
+            "title": "How can a corporate gifting order be placed?",
+            "answer": "Corporate gifting is available to order through our website, as well as on IOS supported flwr & co. apps."
+          }
+        },
+        "8d367dc0-3d3f-4e97-8567-5f0d6c31ae6e": {
+          "type": "QA",
+          "settings": {
+            "title": "If I have additional questions regarding my corporate gifting purchase - where can I go?",
+            "answer": "For any other questions, please head to the support page on our website, and chat with one of our customer representatives!"
+          }
+        }
+      },
+      "block_order": [
+        "f00b4d04-6b6c-4ce0-bf10-630e3abfdc96",
+        "1b55bd6a-7a6e-4c5c-b475-ac38e8ad8a81",
+        "065fe9ca-dc03-4141-9780-58933b8804b0",
+        "d1c16aa4-9c84-49fd-a237-524f82d2f7f2",
+        "dc362c27-22e1-4d8d-8c3e-5a70e1733d68",
+        "c2fc24ec-3341-422e-98a8-dbba0ea38b1d",
+        "0ef1504b-5fef-4f5d-9265-fbc46d2e1dc4",
+        "d6d3fa6f-1abf-439b-9c7e-342aabb1bc37",
+        "8d367dc0-3d3f-4e97-8567-5f0d6c31ae6e"
+      ],
+      "settings": {
+        "heading": "",
+        "phone": "044-472388",
+        "email": "contact@flwrandco.com",
+        "support-mon-thu": "8am - 10pm CET",
+        "support-weekend": "10am - 12am CET"
+      }
+    }
+  },
+  "order": [
+    "1643227771b1e79dff",
+    "main"
+  ]
+}

@@ -8,6 +8,23 @@
   width: 100%;
 }
 
+.rich-text__header {
+  font-weight: 700;
+}
+
+.rich-text__options {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.rich-text__button {
+  display: none;
+}
+
+.options-div {
+  font-weight: 700;
+}
+
 .rich-text__blocks {
   margin: auto;
   /* 2.5rem margin on left & right */
@@ -59,6 +76,16 @@
 @media screen and (min-width: 990px) {
   .rich-text__blocks {
     max-width: 78rem;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .rich-text__options {
+    display: none;
+  }
+
+  .rich-text__button {
+    display: block;
   }
 }
 

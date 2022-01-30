@@ -10,14 +10,42 @@
       {%- for block in section.blocks -%}
         {%- case block.type -%}
           {%- when 'heading' -%}
-            <h2 class="{{ block.settings.heading_size }}" {{ block.shopify_attributes }}>{{ block.settings.heading | escape }}</h2>
+            <h2 class="{{ block.settings.heading_size }} rich-text__header" {{ block.shopify_attributes }}>{{ block.settings.heading | escape }}</h2>
           {%- when 'text' -%}
             <div class="rich-text__text rte" {{ block.shopify_attributes }}>{{ block.settings.text }}</div>
+          <div class="rich-text__button">  
           {%- when 'button' -%}
             <a{% if block.settings.button_link == blank %} role="link" aria-disabled="true"{% else %} href="{{ block.settings.button_link }}"{% endif %} class="button{% if block.settings.button_style_secondary %} button--secondary{% else %} button--primary{% endif %}" {{ block.shopify_attributes }}>
               {{ block.settings.button_label | escape }}
             </a>
-        {%- endcase -%}
+          </div>
+            {%- endcase -%}
+            <div class="rich-text__options">
+              <div class="options_div delivery-icon-div">
+                {% if block.settings.delivery_icon  %}
+                  {% include 'icon.delivery' %}
+                  <p>{{block.settings.delivery_text}}</p>
+                {% endif %}
+              </div>
+              <div class="options_div gifts-icon-div">
+                {% if block.settings.gifts_icon  %}
+                  {% include 'icon.gifts' %}
+                  <p>{{block.settings.gifts_text}} </p>
+                {% endif %}
+              </div>
+              <div class="options_div shipping-icon-div">
+                {% if block.settings.shipping_icon  %}
+                  {% include 'icon.shipping' %}
+                  <p>{{block.settings.shipping_text}}</p>
+                {% endif %}
+              </div>
+              <div class="options_div shop-icon-div">
+                {% if block.settings.shop_icon  %}
+                  {% include 'icon.shop' %}
+                  <p>{{block.settings.shop_text}}</p>
+                {% endif %}
+              </div>
+        </div>
       {%- endfor -%}
     </div>
   </div>
@@ -134,6 +162,61 @@
           "label": "t:sections.rich-text.blocks.button.settings.button_style_secondary.label"
         }
       ]
+    },
+    {
+      "type": "icons",
+      "name": "Delivery Options",
+      "settings": [
+      {
+        "type": "checkbox",
+        "id":"delivery_icon",
+        "label": "Delivery"
+      },
+      {
+        "type": "text",
+        "id":"delivery_text",
+        "label": "Delivery Text"
+      },
+      {
+        "type": "checkbox",
+        "id":"catering_icon",
+        "label": "Catering"
+      },
+      {
+        "type": "text",
+        "id":"catering_text",
+        "label": "Catering Text"
+      },
+      {
+        "type": "checkbox",
+        "id":"gifts_icon",
+        "label": "Gifts"
+      },
+      {
+        "type": "text",
+        "id":"gifts_text",
+        "label": "Gifts Text"
+      },
+      {
+        "type": "checkbox",
+        "id":"shipping_icon",
+        "label": "Shipping"
+      },
+      {
+        "type": "text",
+        "id":"shipping_text",
+        "label": "Shipping Text"
+      },
+      {
+        "type": "checkbox",
+        "id":"shop_icon",
+        "label": "Shop"
+      },
+      {
+        "type": "text",
+        "id":"shop_text",
+        "label": "Shop Text"
+      }]
     }
   ],
   "presets": [
